@@ -1,0 +1,17 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="org.krk.Employee" table="employee">
+		<id name="empid" column="EMPID">
+			<generator class="assigned"></generator>
+		</id>
+		<property name="ename" column="ENAME"></property>
+		<property name="designation" column="DESIGNATION"></property>
+		<property name="sal" column="SAL"></property>
+		<property name="email" column="EMAIL"></property>
+		<property name="password" column="PASSWORD"></property>
+	</class>
+</hibernate-mapping>
